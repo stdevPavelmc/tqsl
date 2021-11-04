@@ -42,3 +42,11 @@ jobs:
     - name: Build AppImage
       working-directory: ${{github.workspace}}
       run: ./appimage.sh
+
+    - uses: actions/upload-artifact@v2
+    
+    - name: Upload AppImage to artifacts
+      with:
+        name: AppImage
+        path: ${{github.workspace}}/TQSL*AppImage
+        if-no-files-found: error # 'error', 'warn' or 'ignore'
