@@ -42,9 +42,6 @@ fi
 if [ -z `which linuxdeploy-x86_64.AppImage` ] ; then 
     wget -c -nv "https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage"
 fi
-if [ -z `which linuxdeploy-plugin-qt-x86_64.AppImage` ] ; then 
-    wget -c -nv "https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage"
-fi
 if [ -z `which linuxdeploy-plugin-appimage-x86_64.AppImage` ] ; then 
     wget -c -nv "https://github.com/linuxdeploy/linuxdeploy-plugin-appimage/releases/download/continuous/linuxdeploy-plugin-appimage-x86_64.AppImage"
 fi
